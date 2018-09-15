@@ -1,0 +1,11 @@
+{
+  "port": 2000,
+  "protocol": "http",
+  "name": "http-service",
+  "recordRequests": false,
+  "stubs": [
+      <% include ../stubs/request.json %>,
+      <% include ../stubs/article/create.json %>,
+      <% include ../stubs/article/list.json %>
+  ]
+}

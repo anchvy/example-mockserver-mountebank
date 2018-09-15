@@ -1,0 +1,13 @@
+{
+  "predicates": [
+     {
+       "equals": {
+         "method": "GET",
+         "path": "/request/info"
+       }
+     }
+   ],
+  "responses": [{
+  	"inject": "function (request) { return { body: JSON.stringify(request) } }"
+  }]
+}

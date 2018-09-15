@@ -1,0 +1,13 @@
+{
+    "predicates": [
+       {
+         "equals": {
+           "method": "POST",
+           "path": "/article/create"
+         }
+       }
+     ],
+    "responses": [{
+        "inject": "function (request, state) { var data = JSON.parse(request.body); state.list = state.list ? state.list : []; data.id = state.list.length; state.list.push(data); return { body: { acknowledge: true, id: data.id } }; }"
+    }]
+  }

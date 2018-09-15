@@ -1,0 +1,13 @@
+{
+    "predicates": [
+       {
+         "equals": {
+           "method": "GET",
+           "path": "/article/list"
+         }
+       }
+     ],
+    "responses": [{
+        "inject": "function (request, state) { return { body: state.list || [] }; }"
+    }]
+  }

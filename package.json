@@ -1,0 +1,12 @@
+{
+  "name": "anchvy-mountebank-mockserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "mock": "mb --configfile imposters.ejs --allowInjection"
+  },
+  "dependencies": {
+      "mountebank": "^1.14.0"
+  }
+}
